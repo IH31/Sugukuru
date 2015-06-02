@@ -1,4 +1,4 @@
-package jp.ac.hal.tokyo.sugukuru.model;
+package sugukuru.model;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,8 +8,9 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 /**
- * 2015/06/01
  * @author yuta
+ * @since 2015/06/01
+ * Dao Super Class
  */
 public abstract class Dao {
 	
