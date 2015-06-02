@@ -9,7 +9,7 @@ import java.sql.Statement;
 
 /**
  * 2015/06/01
- * @author watanabe.yuta
+ * @author yuta
  */
 public abstract class Dao {
 	
