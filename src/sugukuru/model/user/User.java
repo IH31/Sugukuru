@@ -13,10 +13,10 @@ public class User {
 	private String address;
 	private int phone;
 	private int fax;
-	private int email;
+	private String email;
 	
 	public User(String id, String password, String customer_name,
-			String address, int phone, int fax, int email) {
+			String address, int phone, int fax, String email) {
 		
 		this.id = id;
 		this.password = password;
@@ -75,11 +75,11 @@ public class User {
 		this.fax = fax;
 	}
 
-	public int getEmail() {
+	public String getEmail() {
 		return email;
 	}
 
-	public void setEmail(int email) {
+	public void setEmail(String email) {
 		this.email = email;
 	}
 }

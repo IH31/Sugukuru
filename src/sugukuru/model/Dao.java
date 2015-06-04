@@ -18,7 +18,8 @@ public abstract class Dao {
 	private String url = "";
 	private String user = "";
 	private String pass = "";
-	private Connection connection;
+	
+	protected Connection connection;
 		
 	
 	private Connection getConnection() throws SQLException {
