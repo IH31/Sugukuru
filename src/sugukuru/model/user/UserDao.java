@@ -55,6 +55,17 @@ public class UserDao extends Dao {
 			this.open();
 			statement = this.connection.createStatement();
 			result = statement.executeQuery(sql);
+			while(result.next()) {
+				users.add(new User(
+						result.getString("id"),
+						result.getString("password"),
+						result.getString("customer_name"),
+						result.getString("address"),
+						result.getInt("phone"),
+						result.getInt("fax"),
+						result.getString("email")
+						));
+			}
 		} catch(SQLException e) { }
 		return users;
 	}
