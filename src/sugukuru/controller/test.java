@@ -35,6 +35,7 @@ public class test extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		request.getRequestDispatcher("/WEB-INF/view/admin/dashboad/index.jsp").forward(request, response);
 	}
 
 }
