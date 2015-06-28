@@ -14,16 +14,17 @@
 	<nav class="navbar navbar-default navbar-static-top">
 		<div class="container">
 			<div class="navbar-header">
-	            <a href="${pageContext.request.contextPath}/admin/" class="navbar-brand">すぐくる管理システム</a>
+	            <a href="${pageContext.request.contextPath}/admin" class="navbar-brand">すぐくる管理システム</a>
 	        </div>
 	        <div id="navbar" class="navbar-collapse collapse">
 	          <ul class="nav navbar-nav">
 	            <li class="${param.nav_user_active} dropdown">
 	            	<a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu1">顧客管理<b class="caret"></b></a>
 	            	<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-	                  <li><a href="${pageContext.request.contextPath}/admin/customer">法人顧客</a></li>
-	                  <li class="divider"></li>
-	                  <li><a href="${pageContext.request.contextPath}/admin/consumer">個人顧客</a></li>
+	            		<li><a href="#">新規法人登録</a></li>
+	            		<li class="divider"></li>
+	                	<li><a href="${pageContext.request.contextPath}/admin/customer">法人顧客一覧</a></li>
+	                	<li><a href="${pageContext.request.contextPath}/admin/consumer">個人顧客一覧</a></li>
 	                </ul>
 	            </li>
 	            <li class="${param.nav_product_active}"><a href="#about">商品管理</a></li>

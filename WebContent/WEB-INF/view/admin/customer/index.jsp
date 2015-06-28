@@ -59,7 +59,7 @@
   					<td>たなか</td>
   					<td>03-3333-3333</td>
   					<td>sugukuru@hal.ac.jp</td>
-  					<td><a href="">view</a> | <a href="">update</a></td>
+  					<td><a href="${pageContext.request.contextPath}/admin/customer/view">view</a> | <a href="">update</a></td>
   				</tr>
   				<tr>
   					<td>A12345</td>
@@ -67,7 +67,7 @@
   					<td>たなか</td>
   					<td>03-3333-3333</td>
   					<td>sugukuru@hal.ac.jp</td>
-  					<td><a href="">view</a> | <a href="">update</a></td>
+  					<td><a href="${pageContext.request.contextPath}/admin/customer/view">view</a> | <a href="">update</a></td>
   				</tr>
   				<tr>
   					<td>A12345</td>
@@ -75,7 +75,7 @@
   					<td>たなか</td>
   					<td>03-3333-3333</td>
   					<td>sugukuru@hal.ac.jp</td>
-  					<td><a href="">view</a> | <a href="">update</a></td>
+  					<td><a href="${pageContext.request.contextPath}/admin/customer/view">view</a> | <a href="">update</a></td>
   				</tr>
   				<tr>
   					<td>A12345</td>
@@ -83,7 +83,7 @@
   					<td>たなか</td>
   					<td>03-3333-3333</td>
   					<td>sugukuru@hal.ac.jp</td>
-  					<td><a href="">view</a> | <a href="">update</a></td>
+  					<td><a href="${pageContext.request.contextPath}/admin/customer/view">view</a> | <a href="">update</a></td>
   				</tr>
   				<tr>
   					<td>A12345</td>
@@ -91,7 +91,7 @@
   					<td>たなか</td>
   					<td>03-3333-3333</td>
   					<td>sugukuru@hal.ac.jp</td>
-  					<td><a href="">view</a> | <a href="">update</a></td>
+  					<td><a href="${pageContext.request.contextPath}/admin/customer/view">view</a> | <a href="">update</a></td>
   				</tr>
   				<tr>
   					<td>A12345</td>
@@ -99,7 +99,7 @@
   					<td>たなか</td>
   					<td>03-3333-3333</td>
   					<td>sugukuru@hal.ac.jp</td>
-  					<td><a href="">view</a> | <a href="">update</a></td>
+  					<td><a href="${pageContext.request.contextPath}/admin/customer/view">view</a> | <a href="">update</a></td>
   				</tr>
   				<tr>
   					<td>A12345</td>
@@ -107,7 +107,7 @@
   					<td>たなか</td>
   					<td>03-3333-3333</td>
   					<td>sugukuru@hal.ac.jp</td>
-  					<td><a href="">view</a> | <a href="">update</a></td>
+  					<td><a href="${pageContext.request.contextPath}/admin/customer/view">view</a> | <a href="">update</a></td>
   				</tr>
   				<tr>
   					<td>A12345</td>
@@ -115,7 +115,7 @@
   					<td>たなか</td>
   					<td>03-3333-3333</td>
   					<td>sugukuru@hal.ac.jp</td>
-  					<td><a href="">view</a> | <a href="">update</a></td>
+  					<td><a href="${pageContext.request.contextPath}/admin/customer/view">view</a> | <a href="">update</a></td>
   				</tr>
   				<tr>
   					<td>A12345</td>
@@ -123,7 +123,7 @@
   					<td>たなか</td>
   					<td>03-3333-3333</td>
   					<td>sugukuru@hal.ac.jp</td>
-  					<td><a href="">view</a> | <a href="">update</a></td>
+  					<td><a href="${pageContext.request.contextPath}/admin/customer/view">view</a> | <a href="">update</a></td>
   				</tr>
   				<tr>
   					<td>A12345</td>
@@ -131,7 +131,7 @@
   					<td>たなか</td>
   					<td>03-3333-3333</td>
   					<td>sugukuru@hal.ac.jp</td>
-  					<td><a href="">view</a> | <a href="">update</a></td>
+  					<td><a href="${pageContext.request.contextPath}/admin/customer/view">view</a> | <a href="">update</a></td>
   				</tr>
   			</tbody>
   		</table>
