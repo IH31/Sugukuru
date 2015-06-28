@@ -13,7 +13,7 @@
 	  				<fieldset>
 	  					<legend>顧客検索フォーム</legend>
 	  					<div class="form-group">
-	  						<label for="" class="control-label col-lg-2">企業名　：</label>
+	  						<label for="" class="control-label col-lg-2">顧客名　：</label>
 	  						<div class="col-lg-10">
 	  							<input type="text" class="form-control" placeholder="CustomerName" />
 	  						</div>
@@ -55,83 +55,83 @@
   			<tbody>
   				<tr>
   					<td>A12345</td>
-  					<td>株式会社すぐくる</td>
-  					<td>たなか</td>
+  					<td>すずき</td>
   					<td>03-3333-3333</td>
   					<td>sugukuru@hal.ac.jp</td>
-  					<td><a href="">view</a> | <a href="">update</a></td>
+  					<td>東京都新宿区新宿</td>
+  					<td><a href="${pageContext.request.contextPath}/admin/consumer/view">view</a> | <a href="">update</a></td>
   				</tr>
   				<tr>
   					<td>A12345</td>
-  					<td>株式会社すぐくる</td>
-  					<td>たなか</td>
+  					<td>すずき</td>
   					<td>03-3333-3333</td>
   					<td>sugukuru@hal.ac.jp</td>
-  					<td><a href="">view</a> | <a href="">update</a></td>
+  					<td>東京都新宿区新宿</td>
+  					<td><a href="${pageContext.request.contextPath}/admin/consumer/view">view</a> | <a href="">update</a></td>
   				</tr>
   				<tr>
   					<td>A12345</td>
-  					<td>株式会社すぐくる</td>
-  					<td>たなか</td>
+  					<td>すずき</td>
   					<td>03-3333-3333</td>
   					<td>sugukuru@hal.ac.jp</td>
-  					<td><a href="">view</a> | <a href="">update</a></td>
+  					<td>東京都新宿区新宿</td>
+  					<td><a href="${pageContext.request.contextPath}/admin/consumer/view">view</a> | <a href="">update</a></td>
   				</tr>
   				<tr>
   					<td>A12345</td>
-  					<td>株式会社すぐくる</td>
-  					<td>たなか</td>
+  					<td>すずき</td>
   					<td>03-3333-3333</td>
   					<td>sugukuru@hal.ac.jp</td>
-  					<td><a href="">view</a> | <a href="">update</a></td>
+  					<td>東京都新宿区新宿</td>
+  					<td><a href="${pageContext.request.contextPath}/admin/consumer/view">view</a> | <a href="">update</a></td>
   				</tr>
   				<tr>
   					<td>A12345</td>
-  					<td>株式会社すぐくる</td>
-  					<td>たなか</td>
+  					<td>すずき</td>
   					<td>03-3333-3333</td>
   					<td>sugukuru@hal.ac.jp</td>
-  					<td><a href="">view</a> | <a href="">update</a></td>
+  					<td>東京都新宿区新宿</td>
+  					<td><a href="${pageContext.request.contextPath}/admin/consumer/view">view</a> | <a href="">update</a></td>
   				</tr>
   				<tr>
   					<td>A12345</td>
-  					<td>株式会社すぐくる</td>
-  					<td>たなか</td>
+  					<td>すずき</td>
   					<td>03-3333-3333</td>
   					<td>sugukuru@hal.ac.jp</td>
-  					<td><a href="">view</a> | <a href="">update</a></td>
+  					<td>東京都新宿区新宿</td>
+  					<td><a href="${pageContext.request.contextPath}/admin/consumer/view">view</a> | <a href="">update</a></td>
   				</tr>
   				<tr>
   					<td>A12345</td>
-  					<td>株式会社すぐくる</td>
-  					<td>たなか</td>
+  					<td>すずき</td>
   					<td>03-3333-3333</td>
   					<td>sugukuru@hal.ac.jp</td>
-  					<td><a href="">view</a> | <a href="">update</a></td>
+  					<td>東京都新宿区新宿</td>
+  					<td><a href="${pageContext.request.contextPath}/admin/consumer/view">view</a> | <a href="">update</a></td>
   				</tr>
   				<tr>
   					<td>A12345</td>
-  					<td>株式会社すぐくる</td>
-  					<td>たなか</td>
+  					<td>すずき</td>
   					<td>03-3333-3333</td>
   					<td>sugukuru@hal.ac.jp</td>
-  					<td><a href="">view</a> | <a href="">update</a></td>
+  					<td>東京都新宿区新宿</td>
+  					<td><a href="${pageContext.request.contextPath}/admin/consumer/view">view</a> | <a href="">update</a></td>
   				</tr>
   				<tr>
   					<td>A12345</td>
-  					<td>株式会社すぐくる</td>
-  					<td>たなか</td>
+  					<td>すずき</td>
   					<td>03-3333-3333</td>
   					<td>sugukuru@hal.ac.jp</td>
-  					<td><a href="">view</a> | <a href="">update</a></td>
+  					<td>東京都新宿区新宿</td>
+  					<td><a href="${pageContext.request.contextPath}/admin/consumer/view">view</a> | <a href="">update</a></td>
   				</tr>
   				<tr>
   					<td>A12345</td>
-  					<td>株式会社すぐくる</td>
-  					<td>たなか</td>
+  					<td>すずき</td>
   					<td>03-3333-3333</td>
   					<td>sugukuru@hal.ac.jp</td>
-  					<td><a href="">view</a> | <a href="">update</a></td>
+  					<td>東京都新宿区新宿</td>
+  					<td><a href="${pageContext.request.contextPath}/admin/consumer/view">view</a> | <a href="">update</a></td>
   				</tr>
   			</tbody>
   		</table>

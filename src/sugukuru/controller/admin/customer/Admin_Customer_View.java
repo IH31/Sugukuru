@@ -1,4 +1,4 @@
-package sugukuru.controller.admin;
+package sugukuru.controller.admin.customer;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class Admin
+ * Servlet implementation class Admin_Customer_View
  */
-@WebServlet("/admin")
-public class Admin extends HttpServlet {
+@WebServlet("/admin/customer/view")
+public class Admin_Customer_View extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Admin() {
+    public Admin_Customer_View() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -29,10 +29,9 @@ public class Admin extends HttpServlet {
 		// TODO Auto-generated method stub
 		
 		/**
-		 * 	未ログインなら /admin/loginへリダイレクト
-		 *  ログイン済みは　/WEB-INF/view/admin/dashboard/index.jsp　にフォワード
+		 * ユーザＩＤをパラメータ取得　＞　ユーザ検索　＞　リクエストへユーザデータをセット
 		 */
-		request.getRequestDispatcher("/WEB-INF/view/admin/dashboard/index.jsp").forward(request, response);
+		request.getRequestDispatcher("/WEB-INF/view/admin/customer/view.jsp").forward(request, response);
 	}
 
 	/**
@@ -40,10 +39,6 @@ public class Admin extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		
-		/**
-		 * 保留
-		 */
 	}
 
 }
