@@ -1,4 +1,4 @@
-package sugukuru.controller;
+package sugukuru.controller.admin;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class test
+ * Servlet implementation class Admin
  */
-@WebServlet({"/test", "/more"})
-public class test extends HttpServlet {
+@WebServlet("/admin/")
+public class Admin extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public test() {
+    public Admin() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -27,7 +27,12 @@ public class test extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		request.getRequestDispatcher("/WEB-INF/view/admin/login.jsp").forward(request, response);
+		
+		/**
+		 * 	未ログインなら /admin/loginへリダイレクト
+		 *  ログイン済みは　/WEB-INF/view/admin/dashboard/index.jsp　にフォワード
+		 */
+		request.getRequestDispatcher("/WEB-INF/view/admin/dashboard/index.jsp").forward(request, response);
 	}
 
 	/**
@@ -35,7 +40,10 @@ public class test extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		request.getRequestDispatcher("/WEB-INF/view/admin/customer/index.jsp").forward(request, response);
+		
+		/**
+		 * 保留
+		 */
 	}
 
 }
