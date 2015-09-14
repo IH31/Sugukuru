@@ -1,0 +1,41 @@
+table.tblMenu td:hover .hoverMenuUp .hidariRetsu{
+    width:230px;
+    height: 400px;
+    
+}
+table.tblMenu td:hover .hoverMenuUp .centerRetsu{
+    width:230px;
+    height:400px;
+    margin-left: 230px;
+    margin-top: -417px;
+    
+}
+table.tblMenu td:hover .hoverMenuUp .migiRetsu{
+    width:230px;
+    height:400px;
+    margin-left: 460px;
+    margin-top: -417px;
+    
+}
+
+table.tblMenu td:hover .hoverMenuUp .migiRetsu img{
+    width:250px;
+/*    margin:15px; */
+    margin-top:10px;
+   
+}
+
+
+table.tblMenu td:hover .hoverMenuUp .migiRetsu .bannersRetsu{
+    margin:15px;
+    margin-top:35px;
+    
+}
+
+table.tblMenu td:hover .hoverMenuUp hr{
+ height: 1px;
+ color: #ddd;
+ background-color: #ddd;
+ border: none;
+    margin-top:-5px;
+}

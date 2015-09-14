@@ -1,0 +1,40 @@
+.sliderSpacePL{
+    margin-left: 238px;
+    margin-top: -450px;
+    height: /*450px*/700px;
+    
+    background-color: #eee;
+    z-index: 2;
+    position: absolute; /*~~~~~~~~~~~~~ZDES POMENYALOS RASPOLOZENIYE SLAYDERA I POP UP STAL NA MESTO(z-index)~~~~~~*/
+    color:red;
+    width: 750px;
+}
+
+.searchSpace{
+    width:700px;
+    height:175px;
+    background-color: #f5ffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.productsList{
+    width:700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.productKvadrat{
+    width:210px;
+    height:210px;
+    background-color:#ff99f9;
+    display: inline-block;
+    
+}
+
+.productKvadratRastoyaniye{
+    width:25px;
+    display: inline-block;
+}
