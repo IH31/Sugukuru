@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>${param.siteTitle}</title>
 <link rel="shortcut icon" href="${pageContext.request.contextPath}/assets/images/sugukuru2.png" type="image/x-icon">
         <meta name="description" content="Интерактивное руководство по началу работы в Brackets.">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/TopPage.css">
