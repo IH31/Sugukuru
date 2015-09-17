@@ -144,8 +144,8 @@
                             </div>
                             <div class="migiRetsu">
                             	<div class="bannersRetsu">
-                                	<a href=""><img src="images/banners/1_fxknock.jpg" /></a>
-                                    <a href=""><img src="images/banners/2_frixion3.jpg" /></a>
+                                	<a href=""><img src="${pageContext.request.contextPath}/assets/images/banners/1_fxknock.jpg" /></a>
+                                    <a href=""><img src="${pageContext.request.contextPath}/assets/images/banners/2_frixion3.jpg" /></a>
                                 </div>
                             </div>
                     	</div>
@@ -193,8 +193,8 @@
                             </div>
                             <div class="migiRetsu">
                             	<div class="bannersRetsu">
-                                     <a href=""><img src="images/banners/22p4main.jpg" /></a>
-                                     <a href=""><img src="images/banners/1_colors.jpg" /></a>
+                                     <a href=""><img src="${pageContext.request.contextPath}/assets/images/banners/22p4main.jpg" /></a>
+                                     <a href=""><img src="${pageContext.request.contextPath}/assets/images/banners/1_colors.jpg" /></a>
                                 </div>
                             </div>
                         </div>
