@@ -9,7 +9,7 @@
   		<h1>法人顧客一覧</h1>
   		<div class="col-lg-12">
 	  		<div class="jumbotron">
-	  			<form action="post" class="form-horizontal">
+	  			<form class="form-horizontal" action="#" method="post">
 	  				<fieldset>
 	  					<legend>顧客検索フォーム</legend>
 	  					<div class="form-group">
