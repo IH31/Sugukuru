@@ -28,7 +28,6 @@ public class Admin_Customer_Add extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		request.getRequestDispatcher("/WEB-INF/view/admin/customer/add.jsp").forward(request, response);
-//		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**
@@ -36,7 +35,18 @@ public class Admin_Customer_Add extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+		
+		String customerName = request.getParameter("customerName");
+		String customerNameKana = request.getParameter("customerNameKana");
+		String departmentName = request.getParameter("departmentName");
+		String contactPersonName = request.getParameter("contactPersonName");
+		
+		System.out.println("customerName " + customerName);
+		System.out.println("customerNameKana " + customerNameKana);
+		System.out.println("departmentName " + departmentName);
+		System.out.println("contactPersonName " + contactPersonName);
+		
+		request.getRequestDispatcher("/WEB-INF/view/admin/customer/add.jsp").forward(request, response);
 	}
 
 }
