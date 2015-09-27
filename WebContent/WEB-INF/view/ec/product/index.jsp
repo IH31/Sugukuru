@@ -26,7 +26,7 @@
 				%>
 				<div class="productKvadrat">
 					<div class="productKvadrat_image">
-						<div class="productKvadrat_image"><img src="images/banners/pu-skr_001m.jpg"/></div>
+						<div class="productKvadrat_image"><img src="${pageContext.request.contextPath}/assets/images/banners/pu-skr_001m.jpg"/></div>
 						<div class="productName">サクラ・パンチ LGM-8A 白</div>
 						<hr class="productName" /><br/><br/>
 						<div class="priceAll"><span class="price">￥500</span><span class="tax">(税込)</span></div>
@@ -59,10 +59,10 @@
 					%>
 					<div class="productKvadrat">
 						<div class="productKvadrat_image">
-							<div class="productKvadrat_image"><img src="images/banners/pu-skr_001m.jpg"/></div>
-							<div class="productName"><%= //products.get(productsIndex).getProduct_name() %></div>
+							<div class="productKvadrat_image"><img src="${pageContext.request.contextPath}/assets/images/banners/pu-skr_001m.jpg"/></div>
+							<div class="productName">//products.get(productsIndex).getProduct_name()</div>
 							<hr class="productName" /><br/><br/>
-							<div class="priceAll"><span class="price">￥<%= //products.get(productsIndex).getPrice() %></span><span class="tax">(税込)</span></div>
+							<div class="priceAll"><span class="price">￥products.get(productsIndex).getPrice()</span><span class="tax">(税込)</span></div>
 							<br/>
 							<div class="review">
 								<span class="fl">レビュー：</span><img src="${pageContext.request.contextPath}/assets/images/stars/3.png" />
@@ -79,7 +79,7 @@
 				<%
 					//}
 				//謎エラー
-					));
+
 				%>
 			-->
 
