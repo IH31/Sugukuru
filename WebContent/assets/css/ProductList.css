@@ -1,7 +1,7 @@
 .sliderSpacePL{
     margin-left: 238px;
     margin-top: -450px;
-    height: /*450px*/1600px;
+    height: 450px;
     background-color: #eee;
     z-index: 2;
     position: absolute; /*~~~~~~~~~~~~~ZDES POMENYALOS RASPOLOZENIYE SLAYDERA I POP UP STAL NA MESTO(z-index)~~~~~~*/
@@ -34,6 +34,8 @@
 .productKvadrat{
     width:210px;
     height:350px;
+    margin-left: 5px;
+    margin-right: 5px;
     background-color:/*#ff99f9*/ #fff;
     display: inline-block;
     float:left;
@@ -54,8 +56,6 @@
     /*background-size: cover;*/
 
     display: inline-block;
-
-
 }
 .productKvadrat_image img{
     heigt:210px;
