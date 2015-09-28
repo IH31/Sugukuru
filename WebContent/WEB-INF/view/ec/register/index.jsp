@@ -2,11 +2,10 @@
     pageEncoding="UTF-8" import="java.util.*,sugukuru.model.product.*"%>
 <!DOCTYPE html>
 <html>
-
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>すぐくる</title>
+        <title>すぐくる｜登録</title>
 <link rel="shortcut icon" href="${pageContext.request.contextPath}/assets/images/sugukuru2.png" type="image/x-icon">
         <meta name="description" content="Интерактивное руководство по началу работы в Brackets.">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/TopPage.css">
@@ -17,7 +16,6 @@
 	</head>
     <body>
         <div class="RegisterTop"><center><img src="${pageContext.request.contextPath}/assets/images/sugukuru_logo3.png"></center></div>
-        
         <div class="formStyle">
             <center><br>
                 <p class="pp"><b>すぐくる</b>をはじめよう　　　　　　　　　　　　　　　　　　</p>
