@@ -40,7 +40,7 @@
         </form>
             <div class="LoginAndCart">
                 <table>
-                    <td><img src="${pageContext.request.contextPath}/assets/images/user-alt-128_3.png"/><p><b><a href="#">ログイン</a></b> | <a href="#">登録</a></p></td>
+                    <td><img src="${pageContext.request.contextPath}/assets/images/user-alt-128_3.png"/><p><b><a href="#">ログイン</a></b> | <a href="${pageContext.request.contextPath}/ec/register">登録</a></p></td>
                     <td><img src="${pageContext.request.contextPath}/assets/images/1072768_color2.png"/><p><a href="#">カート</a></p></td>
                 </table>
         </div>
