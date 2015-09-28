@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="https://bootswatch.com/lumen/bootstrap.min.css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/productDetail.css">
-<jsp:include page="template/template.jsp">
+<jsp:include page="../template/template.jsp">
 	<jsp:param value="すぐくる|商品詳細" name="siteTitle" />
 	<jsp:param name="pageContents">
 	<jsp:attribute name="value">
