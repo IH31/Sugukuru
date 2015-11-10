@@ -20,6 +20,10 @@ public abstract class Model {
 		return (ArrayList<T>) this.getDaoAPI().select(getClazz(), sql, null);
 	}
 	
+	public int selectCount() {
+		return selectAll().size();
+	}
+	
 	@SuppressWarnings("unchecked")
 	public <T> ArrayList<T> selectWhere(String where, ArrayList<String> whereArgs) {
 		String sql = "SELECT * FROM " + getTableName() + " WHERE " + where + "=?;";
@@ -34,4 +38,5 @@ public abstract class Model {
 		sql += "WHERE " + getPrimaryKey() + "=" + getPrimaryKeyVal();
 		return this.getDaoAPI().update(getClazz(), sql, values);
 	}
+	
 }
