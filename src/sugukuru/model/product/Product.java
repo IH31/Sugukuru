@@ -7,17 +7,21 @@ import sugukuru.dao.Model;
  * @author saito.tatsuro
  *
  */
-public class Product extends Model {
+public class Product {
 	private String product_id;
 	private String product_name;
 	private String kana;
 	private int price;
-	private String manufactuere;
+	private String manufacturer;
 	private int order_point;
 	private String created_at;
 	private String update_at;
 	private int stop_flg;
 	private String category_id;
+
+	
+	
+	public Product() {}
 
 	public Product(String product_id,String product_name,String kana,int price,String manufactuere,
 			int orger_point,String created_at,String update_at,int stop_flg,String category_id) {
@@ -26,7 +30,7 @@ public class Product extends Model {
 		this.product_name = product_name;
 		this.kana = kana;
 		this.price = price;
-		this.manufactuere = manufactuere;
+		this.manufacturer = manufactuere;
 		this.order_point = orger_point;
 		this.created_at = created_at;
 		this.update_at = update_at;
@@ -48,7 +52,7 @@ public class Product extends Model {
 		return price;
 	}
 	public String getManufactuere() {
-		return manufactuere;
+		return manufacturer;
 	}
 	public int getOrder_point() {
 		return order_point;
@@ -79,8 +83,8 @@ public class Product extends Model {
 	public void setPrice(int price) {
 		this.price = price;
 	}
-	public void setManufactuere(String manufactuere) {
-		this.manufactuere = manufactuere;
+	public void setManufacturer(String manufactuere) {
+		this.manufacturer = manufactuere;
 	}
 	public void setOrder_point(int order_point) {
 		this.order_point = order_point;
@@ -96,29 +100,5 @@ public class Product extends Model {
 	}
 	public void setCategory_id(String category_id) {
 		this.category_id = category_id;
-	}
-
-	@Override
-	protected String getPrimaryKeyVal() {
-		// TODO Auto-generated method stub
-		return this.getProduct_id();
-	}
-
-	@Override
-	protected String getPrimaryKey() {
-		// TODO Auto-generated method stub
-		return "PRODUCT_ID";
-	}
-
-	@Override
-	protected Class<?> getClazz() {
-		// TODO Auto-generated method stub
-		return this.getClass();
-	}
-
-	@Override
-	protected String getTableName() {
-		// TODO Auto-generated method stub
-		return "T_PRODUCT";
 	}
 }
