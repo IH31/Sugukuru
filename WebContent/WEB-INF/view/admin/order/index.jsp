@@ -25,6 +25,22 @@
 	  						</div>
 	  					</div>
 	  					<div class="form-group">
+	  						<label for="" class="control-label col-lg-2 col-lg-offset-3">納品状況　：</label>
+	  						<div class="col-lg-2">
+		  						<input type="radio" value="0" name="order_state"/>
+		  						<label>納品済み</label>
+		  						<input type="radio" value="1" name="order_state"/>
+		  						<label>未納品</label>
+	  						</div>
+	  						<label for="" class="control-label col-lg-2">支払い状況　：</label>
+	  						<div class="col-lg-3">
+		  						<input type="radio" value="0" name="pay_state"/>
+		  						<label>入金確認済み</label>
+		  						<input type="radio" value="1" name="pay_state"/>
+		  						<label>入金未確認</label>
+	  						</div>
+	  					</div>
+	  					<div class="form-group">
 	  						<div class="col-lg-12">
 	  							<button type="submit" class="btn btn-success col-lg-12">検索する</button>
 	  						</div>
