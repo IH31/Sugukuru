@@ -1,5 +1,5 @@
 #obshieNastroykiStraniciKorzini{
-    background-color: #f8f8f8;   
+    background-color: #f8f8f8;
 }
 
 .VashaKorzinaText{
@@ -7,7 +7,7 @@
     padding-top:20px;
     padding-bottom:10px;
     font-size: 24px;
-    font-color:#555;
+    color:#555;
 }
 span.VashaKorzinaTextDop{
     font-size: 16px;
@@ -15,7 +15,7 @@ span.VashaKorzinaTextDop{
 }
 .obshayaShirinaKorzini{
     width: 95%;
-    min-width: 600px; //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    min-width: 600px;
     background-color: white;
     margin-left:auto;
     margin-right: auto;
@@ -28,7 +28,7 @@ span.VashaKorzinaTextDop{
 .imageBox{
     /*background-color: #eee;*/
     height:100%;
-    width: 25%;  
+    width: 25%;
     display: inline-block;
     float:left;
 }
@@ -41,14 +41,13 @@ span.VashaKorzinaTextDop{
 .nameBox{
     /*background-color: #fff;*/
     height:100%;
-    width: 37%;  
+    width: 37%;
     display: inline-block;
     float:left;
 }
 .nameBox span.dop1{
     font-size:18px;
-    font-color:#555;
-    
+    color:#555;
     padding-top: 20px;
 }
 .nameBox span.dop2{
@@ -60,7 +59,7 @@ span.VashaKorzinaTextDop{
 .priceBox{
     /*background-color: #ddd;*/
     height:100%;
-    width: 37%;  
+    width: 37%;
     display: inline-block;
 }
 .priceBox input{
@@ -79,94 +78,72 @@ span.VashaKorzinaTextDop{
 span.dopBold{
     color:#f87968;
     font-size:18px;
-    
+
 }
 span.dopL{
     font-size:16px;
     margin-left:150px;
 }
 hr.dop3{
-  color: #e8e8e8; /*для IE */
-    background-color:#e8e8e8; /*для Firefox, Opera, Safari*/
+  color: #e8e8e8; /*ﾐｴﾐｻﾑ� IE */
+    background-color:#e8e8e8; /*ﾐｴﾐｻﾑ� Firefox, Opera, Safari*/
     border:0px none;
     width:300px;
-    
-    height:1px; /* высота 1px IE, Firefox, Opera, Safari */
-    clear:both; /* для очистки, если тег идет после float елемента */
-   
+
+    height:1px; /* ﾐｲﾑ錦�ﾐｾﾑひｰ 1px IE, Firefox, Opera, Safari */
+    clear:both; /* ﾐｴﾐｻﾑ� ﾐｾﾑ�ﾐｸﾑ�ﾑひｺﾐｸ, ﾐｵﾑ�ﾐｻﾐｸ ﾑひｵﾐｳ ﾐｸﾐｴﾐｵﾑ� ﾐｿﾐｾﾑ�ﾐｻﾐｵ float ﾐｵﾐｻﾐｵﾐｼﾐｵﾐｽﾑひｰ */
+
 }
 hr.dopHR2{
-  color: #e8e8e8; /*для IE */
-    background-color:#e8e8e8; /*для Firefox, Opera, Safari*/
+  color: #e8e8e8; /*ﾐｴﾐｻﾑ� IE */
+    background-color:#e8e8e8; /*ﾐｴﾐｻﾑ� Firefox, Opera, Safari*/
     border:0px none;
     width:100%;
     margin-left: auto;
     margin-right: auto;
-    height:1px; /* высота 1px IE, Firefox, Opera, Safari */
-    clear:both; /* для очистки, если тег идет после float елемента */
-   
+    height:1px; /* ﾐｲﾑ錦�ﾐｾﾑひｰ 1px IE, Firefox, Opera, Safari */
+    clear:both; /* ﾐｴﾐｻﾑ� ﾐｾﾑ�ﾐｸﾑ�ﾑひｺﾐｸ, ﾐｵﾑ�ﾐｻﾐｸ ﾑひｵﾐｳ ﾐｸﾐｴﾐｵﾑ� ﾐｿﾐｾﾑ�ﾐｻﾐｵ float ﾐｵﾐｻﾐｵﾐｼﾐｵﾐｽﾑひｰ */
+
 }
 hr.dopHR1{
-  color: #e8e8e8; /*для IE */
-    background-color:#e8e8e8; /*для Firefox, Opera, Safari*/
+  color: #e8e8e8; /*ﾐｴﾐｻﾑ� IE */
+    background-color:#e8e8e8; /*ﾐｴﾐｻﾑ� Firefox, Opera, Safari*/
     border:0px none;
     width:100%;
     margin-left: auto;
     margin-right: auto;
-    height:1px; /* высота 1px IE, Firefox, Opera, Safari */
-    clear:both; /* для очистки, если тег идет после float елемента */
-   
+    height:1px; /* ﾐｲﾑ錦�ﾐｾﾑひｰ 1px IE, Firefox, Opera, Safari */
+    clear:both; /* ﾐｴﾐｻﾑ� ﾐｾﾑ�ﾐｸﾑ�ﾑひｺﾐｸ, ﾐｵﾑ�ﾐｻﾐｸ ﾑひｵﾐｳ ﾐｸﾐｴﾐｵﾑ� ﾐｿﾐｾﾑ�ﾐｻﾐｵ float ﾐｵﾐｻﾐｵﾐｼﾐｵﾐｽﾑひｰ */
 }
 hr.topHRinCart{
-  color: #f1f1f1; /*для IE */
-    background-color:#f1f1f1; /*для Firefox, Opera, Safari*/
+  color: #f1f1f1; /*ﾐｴﾐｻﾑ� IE */
+    background-color:#f1f1f1; /*ﾐｴﾐｻﾑ� Firefox, Opera, Safari*/
     border:0px none;
     width:100%;
     margin-left: auto;
     margin-right: auto;
-    height:1px; /* высота 1px IE, Firefox, Opera, Safari */
-    clear:both; /* для очистки, если тег идет после float елемента */
-   
+    height:1px; /* ﾐｲﾑ錦�ﾐｾﾑひｰ 1px IE, Firefox, Opera, Safari */
+    clear:both; /* ﾐｴﾐｻﾑ� ﾐｾﾑ�ﾐｸﾑ�ﾑひｺﾐｸ, ﾐｵﾑ�ﾐｻﾐｸ ﾑひｵﾐｳ ﾐｸﾐｴﾐｵﾑ� ﾐｿﾐｾﾑ�ﾐｻﾐｵ float ﾐｵﾐｻﾐｵﾐｼﾐｵﾐｽﾑひｰ */
+
 }
 hr.topHRinCart2{
-  color: #e8e8e8; /*для IE */
-    background-color:#e8e8e8; /*для Firefox, Opera, Safari*/
+  color: #e8e8e8; /*ﾐｴﾐｻﾑ� IE */
+    background-color:#e8e8e8; /*ﾐｴﾐｻﾑ� Firefox, Opera, Safari*/
     border:0px none;
     width:100%;
     margin-left: auto;
     margin-right: auto;
-    height:1px; /* высота 1px IE, Firefox, Opera, Safari */
-    clear:both; /* для очистки, если тег идет после float елемента */
-   
+    height:1px; /* ﾐｲﾑ錦�ﾐｾﾑひｰ 1px IE, Firefox, Opera, Safari */
+    clear:both; /* ﾐｴﾐｻﾑ� ﾐｾﾑ�ﾐｸﾑ�ﾑひｺﾐｸ, ﾐｵﾑ�ﾐｻﾐｸ ﾑひｵﾐｳ ﾐｸﾐｴﾐｵﾑ� ﾐｿﾐｾﾑ�ﾐｻﾐｵ float ﾐｵﾐｻﾐｵﾐｼﾐｵﾐｽﾑひｰ */
+
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-.LogInCart2 a{
-    margin-top: 40px;
-    margin-left:5px;
-    /*margin-left: 950px;
-    padding-top: -50px; */
-    display: inline-block;
-    float: left;
-    font-size:17px;
+.LogInCart2 {
+  line-height: 90px;
+  padding-left: 2em;
 }
-.LogInCart2 img.login{
-    margin-top: 30px;
-    margin-left:30px;
-    /*margin-left: 950px;
-    padding-top: -50px; */
-    display: inline-block;
-    float: left;
-    width: /*45px*/40px;
+.LogInCart2 img {
+  width: 10%;
 }
 
-.LogInCart2 img.cart{
-    margin-top: 33px;
-    margin-left:30px;
-    /*margin-left: 950px;
-    padding-top: -50px; */
-    display: inline-block;
-    float: left;
-    width: /*45px*/35px;
-}
