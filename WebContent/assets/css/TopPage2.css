@@ -1,0 +1,31 @@
+body{
+ margin:0;
+ padding: 0;
+}
+.topUnderTop{
+    height: 35px;
+    background-color:#F7F7F7;
+    width:100%;
+    color:red;
+    border-bottom: solid 1px #ddd;
+}
+.topMain{
+    height: 90px;
+    color: white;
+    width:100%;
+    border-bottom: solid 1px #ddd;
+    display: flex;
+}
+.topMain .logo_img img{
+    height: 60px;
+    margin-left: 57px;
+    margin-top: 15px;
+    margin-right: 100px;
+}
+a:link{color:#9E9E9E;}
+a:visited{color:#9E9E9E;}
+a:hover{color:/*#2877aa*/ #e54040;}
+a:active{color:#e54040;}
+a{
+    text-decoration: none;
+}
