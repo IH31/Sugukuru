@@ -86,18 +86,6 @@
 
 		</div>
 
-		<div class="NumperOfPage">1</div>
-		<br/>
-		<div class="productListFutter">
-			<hr />
-			<center>Copyright 2015 &copy; All Rights Reserved.</center>
-		</div>
-
-		<div class="dveKartinkiSprava">
-			<!--img class="oneBanner" src="images/banners/91434.jpg"/-->
-		</div>
-
-	</div>
 	</jsp:attribute>
 	</jsp:param>
 </jsp:include>
