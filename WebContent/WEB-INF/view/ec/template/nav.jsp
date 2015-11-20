@@ -5,15 +5,13 @@
     <div class="main-article-left-column">
       <nav>
         <ul class="global-nav">
-          <li><a>カテゴリー</a></li>
-          <li><a>事務用品</a></li>
-          <li><a>文房具</a></li>
-          <li><a>ファイル</a></li>
-          <li><a>トナー・インク</a></li>
-          <li><a>OAサプライ</a></li>
-          <li><a>パソコン周辺機器・メディア</a></li>
-          <li><a>オフィス家具・収納</a></li>
-          <li><a>生活雑貨・キッチン用品</a></li>
+          <li><a href="${pageContext.request.contextPath}/ec?id=ca1">事務用品</a></li>
+          <li><a href="${pageContext.request.contextPath}/ec?id=ca2">文房具</a></li>
+          <li><a href="${pageContext.request.contextPath}/ec?id=ca3">ファイル</a></li>
+          <li><a href="${pageContext.request.contextPath}/ec?id=ca4">トナー・インク</a></li>
+          <li><a href="${pageContext.request.contextPath}/ec?id=ca5">OAサプライ</a></li>
+          <li><a href="${pageContext.request.contextPath}/ec?id=ca6">パソコン周辺機器・メディア</a></li>
+          <li><a href="${pageContext.request.contextPath}/ec?id=ca7">オフィス家具・収納</a></li>
         </ul>
       </nav>
     </div>
