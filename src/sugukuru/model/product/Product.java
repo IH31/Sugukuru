@@ -1,33 +1,39 @@
 package sugukuru.model.product;
 
+import sugukuru.dao.Model;
+
 /**
  *
  * @author saito.tatsuro
  *
  */
-public class Product {
+public class Product extends Model {
 	private String product_id;
 	private String product_name;
 	private String kana;
 	private int price;
-	private String manufactuere;
+	private String manufacturer;
 	private int order_point;
 	private String created_at;
-	private String update_at;
+	private String updated_at;
 	private int stop_flg;
 	private String category_id;
 
+	
+	public Product() {
+	}
+
 	public Product(String product_id,String product_name,String kana,int price,String manufactuere,
-			int orger_point,String created_at,String update_at,int stop_flg,String category_id) {
+			int orger_point,String created_at,String updated_at,int stop_flg,String category_id) {
 
 		this.product_id = product_id;
 		this.product_name = product_name;
 		this.kana = kana;
 		this.price = price;
-		this.manufactuere = manufactuere;
+		this.manufacturer = manufactuere;
 		this.order_point = orger_point;
 		this.created_at = created_at;
-		this.update_at = update_at;
+		this.updated_at = updated_at;
 		this.stop_flg = stop_flg;
 		this.category_id = category_id;
 	}
@@ -45,8 +51,8 @@ public class Product {
 	public int getPrice() {
 		return price;
 	}
-	public String getManufactuere() {
-		return manufactuere;
+	public String getManufacturer() {
+		return manufacturer;
 	}
 	public int getOrder_point() {
 		return order_point;
@@ -54,8 +60,8 @@ public class Product {
 	public String getCreated_at() {
 		return created_at;
 	}
-	public String getUpdate_at() {
-		return update_at;
+	public String getUpdated_at() {
+		return updated_at;
 	}
 	public int getStop_flg() {
 		return stop_flg;
@@ -77,8 +83,8 @@ public class Product {
 	public void setPrice(int price) {
 		this.price = price;
 	}
-	public void setManufactuere(String manufactuere) {
-		this.manufactuere = manufactuere;
+	public void setManufacturer(String manufacturer) {
+		this.manufacturer = manufacturer;
 	}
 	public void setOrder_point(int order_point) {
 		this.order_point = order_point;
@@ -86,14 +92,38 @@ public class Product {
 	public void setCreated_at(String created_at) {
 		this.created_at = created_at;
 	}
-	public void setUpdate_at(String update_at) {
-		this.update_at = update_at;
+	public void setUpdated_at(String updated_at) {
+		this.updated_at = updated_at;
 	}
 	public void setStop_flg(int stop_flg) {
 		this.stop_flg = stop_flg;
 	}
 	public void setCategory_id(String category_id) {
 		this.category_id = category_id;
+	}
+
+	@Override
+	protected String getPrimaryKeyVal() {
+		// TODO Auto-generated method stub
+		return getProduct_id();
+	}
+
+	@Override
+	protected String getPrimaryKey() {
+		// TODO Auto-generated method stub
+		return "PRODUCT_ID";
+	}
+
+	@Override
+	protected Class<?> getClazz() {
+		// TODO Auto-generated method stub
+		return getClass();
+	}
+
+	@Override
+	protected String getTableName() {
+		// TODO Auto-generated method stub
+		return "T_PRODUCT";
 	}
 
 

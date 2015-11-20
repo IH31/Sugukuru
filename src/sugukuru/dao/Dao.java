@@ -18,10 +18,10 @@ public class Dao implements DaoAPI {
 	private PreparedStatement prepare;
 	private ResultSet result;
 	
-	final private String serverName = "xxxx";
-	final private String instanceName = "xxxx";
-	final private String userName = "xxxx";
-	final private String password = "xxxx";
+	final private String serverName = "192.168.33.12";
+	final private String instanceName = "XE";
+	final private String userName = "ih13";
+	final private String password = "ih13";
 	
 	public Dao() {
 		try {
@@ -52,6 +52,7 @@ public class Dao implements DaoAPI {
 					prepare.setString(idx + 1, bind.get(idx));
 				}
 			}
+			System.out.println(sql);
 			result = prepare.executeQuery();
 			while(result.next()) {
 				obj = constructor.newInstance(new Object[] {});
@@ -59,9 +60,11 @@ public class Dao implements DaoAPI {
 					if(method.getName().startsWith("set")) {
 						Class<?>[] arg = method.getParameterTypes();
 						if(arg[0].getName() == "java.lang.String") {
-							method.invoke(obj, result.getString(method.getName().substring(3).toLowerCase()));
+							System.out.println(method.getName().substring(3).toUpperCase());
+							method.invoke(obj, result.getString(method.getName().substring(3).toUpperCase()));
 						} else if(arg[0].getName() == "int") {
-							method.invoke(obj, result.getInt(method.getName().substring(3).toLowerCase()));
+							System.out.println(method.getName().substring(3).toUpperCase());
+							method.invoke(obj, result.getInt(method.getName().substring(3).toUpperCase()));
 						}
 					}
 				}
