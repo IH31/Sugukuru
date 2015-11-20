@@ -9,16 +9,17 @@
 	<%
 	ArrayList<Product> products = (ArrayList<Product>)request.getAttribute("products");
 	if(products != null && products.size() > 0) {
-		for(int idx = 0; idx < products.size(); idx++) {
-			Product product = products.get(idx);
+		for(int idx = 0; idx < products.size();) {
 	%>
-        <% if(idx % 3 == 0) { %>
         <div class="product-list-row">
-        <% } %>
+        <%
+        	for(int cntThree = 0; cntThree < 3 && idx < products.size(); cntThree++, idx++) {
+				Product product = products.get(idx);
+		%>
           <a href="${pageContext.request.contextPath}/ec/detail?id=<%= product.getProduct_id() %>">
             <div class="product-list-contents">
               <div class="product-img">
-                <img src="${pageContext.request.contextPath}/assets/images/products/<%= product.getProduct_id() %>.jpg" alt="productImg">
+                <img src="${pageContext.request.contextPath}/assets/images/products/<%= product.getProduct_id() %>.jpg" alt="<%= product.getProduct_name() %>">
               </div>
               <div class="product-name">
                 <p><%= product.getProduct_name() %></p>
@@ -28,9 +29,8 @@
               </div>
             </div>
           </a>
-        <% if(idx % 3 == 0) { %>
-        </div>
         <% } %>
+        </div>
 	<%
 		}
 	} else {
