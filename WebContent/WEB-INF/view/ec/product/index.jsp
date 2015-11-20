@@ -1,91 +1,46 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" import="java.util.*,sugukuru.model.product.*"%>
-<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/ProductList.css">
 <jsp:include page="../template/template.jsp">
 	<jsp:param value="すぐくる" name="siteTitle" />
 	<jsp:param name="pageContents">
 	<jsp:attribute name="value">
-
-		<div class="sliderSpacePL">
-			<%
-				/*
-				request.setCharacterEncoding("UTF-8");
-				ArrayList<Product> products = (ArrayList<Product>)request.getAttribute("products");
-				int pageNumber = 0;
-				int productsIndex = 0;
-
-				pageNumber = Integer.parseInt(request.getParameter("pageNumber"));
-				productsIndex = pageNumber * 9;
-				*/
-				//商品一覧の行部分
-				for(int i=0;i<3;i++){
-			%>
-			<div class="productsList">
-				<%
-					for(int j=0;j<3;j++){
-				%>
-				<div class="productKvadrat">
-					<div class="productKvadrat_image">
-						<div class="productKvadrat_image"><img src="${pageContext.request.contextPath}/assets/images/banners/pu-skr_001m.jpg"/></div>
-						<div class="productName">サクラ・パンチ LGM-8A 白</div>
-						<hr class="productName" /><br/><br/>
-						<div class="priceAll"><span class="price">￥500</span><span class="tax">(税込)</span></div>
-						<br/>
-						<div class="review">
-							<span class="fl">レビュー：</span><img src="${pageContext.request.contextPath}/assets/images/stars/3.png" />
-						</div>
-						<span class="fl2">(15件）</span>
-						<div class="numberofOrder">注文数：100</div>
-					</div>
-				</div>
-				<%
-					}
-				%>
-				<div class="productKvadratRastoyaniye"></div>
-			</div>
-			<%
-				}
-			%>
-
-
-			<!-- jsp  -->
-			<!--
-				<%
-						//for(int i=0;i<3;i++){
-				%>
-				<div class="productsList">
-					<%
-						//for(int j=0;j<3;j++){
-					%>
-					<div class="productKvadrat">
-						<div class="productKvadrat_image">
-							<div class="productKvadrat_image"><img src="${pageContext.request.contextPath}/assets/images/banners/pu-skr_001m.jpg"/></div>
-							<div class="productName">//products.get(productsIndex).getProduct_name()</div>
-							<hr class="productName" /><br/><br/>
-							<div class="priceAll"><span class="price">￥products.get(productsIndex).getPrice()</span><span class="tax">(税込)</span></div>
-							<br/>
-							<div class="review">
-								<span class="fl">レビュー：</span><img src="${pageContext.request.contextPath}/assets/images/stars/3.png" />
-							</div>
-							<span class="fl2">(15件）</span>
-							<div class="numberofOrder">注文数：100</div>
-						</div>
-					</div>
-					<%
-						//productsIndex+=1;}
-					%>
-					<div class="productKvadratRastoyaniye"></div>
-				</div>
-				<%
-					//}
-				//謎エラー
-
-				%>
-			-->
-
-
-		</div>
-
+	
+	<div class="product-list">
+	<%
+	ArrayList<Product> products = (ArrayList<Product>)request.getAttribute("products");
+	if(products != null && products.size() > 0) {
+		for(int idx = 0; idx < products.size(); idx++) {
+			Product product = products.get(idx);
+	%>
+        <% if(idx % 3 == 0) { %>
+        <div class="product-list-row">
+        <% } %>
+          <a href="${pageContext.request.contextPath}/ec/detail?id=<%= product.getProduct_id() %>">
+            <div class="product-list-contents">
+              <div class="product-img">
+                <img src="${pageContext.request.contextPath}/assets/images/products/<%= product.getProduct_id() %>.jpg" alt="productImg">
+              </div>
+              <div class="product-name">
+                <p><%= product.getProduct_name() %></p>
+              </div>
+              <div class="product-price">
+                <p>¥<%= product.getPrice() %>(税込)</p>
+              </div>
+            </div>
+          </a>
+        <% if(idx % 3 == 0) { %>
+        </div>
+        <% } %>
+	<%
+		}
+	} else {
+	%>
+		<p>商品がありません...</p>
+	<%
+	}
+	%>  
+    </div>
+    
 	</jsp:attribute>
 	</jsp:param>
 </jsp:include>
