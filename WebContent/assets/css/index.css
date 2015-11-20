@@ -223,6 +223,7 @@ body{
 .global-nav a {
   color: #9E9E9E;
   display: block;
+  text-decoration: none;
 }
 
 .global-nav a:hover {
@@ -235,4 +236,45 @@ body{
 
 .global-nav a:visited {
   color: #9E9E9E;
+}
+
+
+/** productList **/
+.product-list-row {
+  display: flex;
+  width: 810px;
+  min-width: 780px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.product-list-row a {
+  text-decoration: none;
+  color: #666;
+}
+
+.product-list-row a:hover {
+  opacity: 0.7;
+}
+
+.product-list-contents {
+  width: 240px;
+  height: 380px;
+  margin: 0 15px;
+  background-color: #fff;
+}
+
+.product-img {
+  height: 240px;
+}
+
+.product-name {
+  text-align: center;
+  font-weight: lighter;
+  border-bottom: solid 1px #ddd;
+}
+
+.product-price {
+  text-align: right;
+  padding-right: 1em;
 }
