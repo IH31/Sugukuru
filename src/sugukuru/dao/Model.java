@@ -22,7 +22,7 @@ public abstract class Model {
 	
 	@SuppressWarnings("unchecked")
 	public <T> ArrayList<T> selectWhere(String where, ArrayList<String> whereArgs) {
-		String sql = "SELECT * FROM " + getTableName() + " WHERE " + where + "=?;";
+		String sql = "SELECT * FROM " + getTableName() + " WHERE " + where + "=?";
 		return (ArrayList<T>) this.getDaoAPI().select(getClazz(), sql, whereArgs);
 	}
 	

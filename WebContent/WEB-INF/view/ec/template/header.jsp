@@ -30,9 +30,9 @@
   <button type="submit"><img src="${pageContext.request.contextPath}/assets/images/search-kensaku3.png"/></button>
   </form>
   <div class="LogInCart2">
-    <a href="#"><img src="${pageContext.request.contextPath}/assets/images/ic_perm_identity_black_24dp.png" class="login"/>
+    <a href="${pageContext.request.contextPath}/ec/login"><img src="${pageContext.request.contextPath}/assets/images/ic_perm_identity_black_24dp.png" class="login"/>
     ログイン</a>
-    <a href="#"><img src="${pageContext.request.contextPath}/assets/images/ic_add_shopping_cart_black_24dp.png" class="cart"/>
+    <a href="${pageContext.request.contextPath}/ec/cart"><img src="${pageContext.request.contextPath}/assets/images/ic_add_shopping_cart_black_24dp.png" class="cart"/>
     カート</a>
   </div>
 </header>
