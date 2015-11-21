@@ -36,3 +36,5 @@
     カート</a>
   </div>
 </header>
+<article class="main-article">
+<div class="main-article-center">

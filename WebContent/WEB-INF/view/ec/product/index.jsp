@@ -25,7 +25,7 @@
                 <p><%= product.getProduct_name() %></p>
               </div>
               <div class="product-price">
-                <p>¥<%= product.getPrice() %>(税込)</p>
+                <p><span class="price-red">¥<%= product.getPrice() %></span>	(税込)</p>
               </div>
             </div>
           </a>
