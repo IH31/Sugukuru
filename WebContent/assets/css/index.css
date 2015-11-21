@@ -266,6 +266,13 @@ body{
 
 .product-img {
   height: 240px;
+  padding-top: .5em;
+  text-align: center;
+}
+
+.product-img img {
+	width: 90%;
+	border-bottom: dotted 1px #ddd;
 }
 
 .product-name {
