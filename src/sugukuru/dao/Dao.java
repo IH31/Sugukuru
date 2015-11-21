@@ -60,10 +60,8 @@ public class Dao implements DaoAPI {
 					if(method.getName().startsWith("set")) {
 						Class<?>[] arg = method.getParameterTypes();
 						if(arg[0].getName() == "java.lang.String") {
-							System.out.println(method.getName().substring(3).toUpperCase());
 							method.invoke(obj, result.getString(method.getName().substring(3).toUpperCase()));
 						} else if(arg[0].getName() == "int") {
-							System.out.println(method.getName().substring(3).toUpperCase());
 							method.invoke(obj, result.getInt(method.getName().substring(3).toUpperCase()));
 						}
 					}
