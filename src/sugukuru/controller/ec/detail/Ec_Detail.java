@@ -1,4 +1,4 @@
-package sugukuru.controller.ec;
+package sugukuru.controller.ec.detail;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -15,16 +15,17 @@ import org.apache.commons.lang3.StringUtils;
 import sugukuru.model.product.Product;
 
 /**
- * Servlet implementation class Ec
+ * Servlet implementation class Ec_Detail
+ * @param <T>
  */
-@WebServlet({"/ec", "/ec/products"})
-public class Ec extends HttpServlet {
+@WebServlet("/ec/detail")
+public class Ec_Detail<T> extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Ec() {
+    public Ec_Detail() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -34,15 +35,16 @@ public class Ec extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-
-		String requestPage = "/WEB-INF/view/ec/product/index.jsp";
-		String id = request.getParameter("id");
+		String requestPage = "/WEB-INF/view/ec/product/detail.jsp";
 		
+		String id = request.getParameter("id");
 		Product product = new Product();
-		if(StringUtils.contains(id, "ca")) {
-			request.setAttribute("products", product.selectWhere("CATEGORY_ID", new ArrayList<String>(Arrays.asList(id))));
-		} else {
-			request.setAttribute("products", product.selectAll());
+		if(StringUtils.contains(id, "p")) {
+			ArrayList<T> products = product.selectWhere("PRODUCT_ID", new ArrayList<String>(Arrays.asList(id)));
+			if(products != null) {
+				product = (Product)products.get(0);
+				request.setAttribute("product", product);
+			}
 		}
 		request.getRequestDispatcher(requestPage).forward(request, response);
 	}
