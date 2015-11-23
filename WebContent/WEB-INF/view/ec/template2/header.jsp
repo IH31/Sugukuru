@@ -34,6 +34,10 @@
     ログイン</a>
     <a href="#"><img src="${pageContext.request.contextPath}/assets/images/ic_add_shopping_cart_black_24dp.png" class="cart"/>
     カート</a>
+    <a href="${pageContext.request.contextPath}/ec/cart"><img src="${pageContext.request.contextPath}/assets/images/ic_add_shopping_cart_black_24dp.png" class="cart"/>
+    カート</a>
+    <a href="${pageContext.request.contextPath}/ec/account"><img src="${pageContext.request.contextPath}/assets/images/ic_perm_identity_black_24dp.png" class="login"/>
+    アカウント</a>
   </div>
 </header>
 <article class="main-article">

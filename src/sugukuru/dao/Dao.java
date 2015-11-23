@@ -52,7 +52,6 @@ public class Dao implements DaoAPI {
 					prepare.setString(idx + 1, bind.get(idx));
 				}
 			}
-			System.out.println(sql);
 			result = prepare.executeQuery();
 			while(result.next()) {
 				obj = constructor.newInstance(new Object[] {});
