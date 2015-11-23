@@ -414,3 +414,53 @@ body, h2, p, th{
 	border-bottom: solid 1px #fff;
 }
 
+
+/** footerContent **/
+.footer {
+	color: #666;
+	background-color: #FAFAFA;
+}
+
+.footer-content {
+	width: 60%;
+	margin: 0 auto;
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+.footer-content-group {
+	display: flex;
+}
+
+.footer-category,
+.footer-account,
+.footer-company {
+	width: 33.33%;
+	padding: .5em 2em;
+}
+
+.footer-sub-title {
+	padding-bottom: .5em;
+	border-bottom: 2px solid #ddd;
+}
+
+.footer-list {
+	padding: 0;
+	list-style: none;
+}
+
+.footer-list li a {
+	font-size: .8em;
+	text-decoration: none;
+	color: #004B91;
+}
+
+.footer-list li a:hover {
+	color: #F44336;
+}
+
+.footer-label {
+	text-align: center;
+}
+
+
