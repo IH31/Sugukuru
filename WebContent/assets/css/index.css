@@ -184,6 +184,7 @@ body, h2, p, th{
 }
 
 .LogInCart2 {
+	width: 500px;
   display: flex;
   line-height: 90px;
   padding-left: 2em;
@@ -194,6 +195,7 @@ body, h2, p, th{
 }
 
 .LogInCart2 a {
+  width: 25%;
   text-align: center;
   color: #9E9E9E;
   display: block;

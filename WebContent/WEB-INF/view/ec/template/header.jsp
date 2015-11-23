@@ -32,7 +32,11 @@
   <div class="LogInCart2">
     <a href="${pageContext.request.contextPath}/ec/login"><img src="${pageContext.request.contextPath}/assets/images/ic_perm_identity_black_24dp.png" class="login"/>
     ログイン</a>
+    <a href="${pageContext.request.contextPath}/ec/register"><img src="${pageContext.request.contextPath}/assets/images/ic_perm_identity_black_24dp.png" class="login"/>
+    登録</a>
     <a href="${pageContext.request.contextPath}/ec/cart"><img src="${pageContext.request.contextPath}/assets/images/ic_add_shopping_cart_black_24dp.png" class="cart"/>
     カート</a>
+    <a href="${pageContext.request.contextPath}/ec/account"><img src="${pageContext.request.contextPath}/assets/images/ic_perm_identity_black_24dp.png" class="login"/>
+    アカウント</a>
   </div>
 </header>
