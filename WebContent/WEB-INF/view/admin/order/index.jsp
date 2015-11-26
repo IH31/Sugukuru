@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <jsp:include page="../template/template.jsp">
-  <jsp:param value="法人顧客管理｜すぐくる管理システム" name="siteTitle" />
+  <jsp:param value="受注管理｜すぐくる管理システム" name="siteTitle" />
   <jsp:param value="active" name="nav_user_active" />
   <jsp:param name="pageContents">
   	<jsp:attribute name="value">
@@ -74,6 +74,7 @@
   					<td>済</td>
   					<td>12/10</td>
   					<td>未</td>
+  					<td><a href="${pageContext.request.contextPath}/admin/order/view">view</a> | <a href="">update</a></td>
   				</tr>
   				<tr>
   					<td>A12345</td>
@@ -84,6 +85,7 @@
   					<td>済</td>
   					<td>12/10</td>
   					<td>未</td>
+  					<td><a href="${pageContext.request.contextPath}/admin/order/view">view</a> | <a href="">update</a></td>
   				</tr>
   				<tr>
   					<td>A12345</td>
@@ -94,6 +96,7 @@
   					<td>済</td>
   					<td>12/10</td>
   					<td>未</td>
+  					<td><a href="${pageContext.request.contextPath}/admin/order/view">view</a> | <a href="">update</a></td>
   				</tr>
   				<tr>
   					<td>A12345</td>
@@ -104,6 +107,7 @@
   					<td>済</td>
   					<td>12/10</td>
   					<td>未</td>
+  					<td><a href="${pageContext.request.contextPath}/admin/order/view">view</a> | <a href="">update</a></td>
   				</tr>
   				<tr>
   					<td>A12345</td>
@@ -114,6 +118,7 @@
   					<td>済</td>
   					<td>12/10</td>
   					<td>未</td>
+  					<td><a href="${pageContext.request.contextPath}/admin/order/view">view</a> | <a href="">update</a></td>
   				</tr>
   				<tr>
   					<td>A12345</td>
@@ -124,6 +129,7 @@
   					<td>済</td>
   					<td>12/10</td>
   					<td>未</td>
+  					<td><a href="${pageContext.request.contextPath}/admin/order/view">view</a> | <a href="">update</a></td>
   				</tr>
   				<tr>
   					<td>A12345</td>
@@ -134,6 +140,7 @@
   					<td>済</td>
   					<td>12/10</td>
   					<td>未</td>
+  					<td><a href="${pageContext.request.contextPath}/admin/order/view">view</a> | <a href="">update</a></td>
   				</tr>
   				<tr>
   					<td>A12345</td>
@@ -144,6 +151,7 @@
   					<td>済</td>
   					<td>12/10</td>
   					<td>未</td>
+  					<td><a href="${pageContext.request.contextPath}/admin/order/view">view</a> | <a href="">update</a></td>
   				</tr>
   			</tbody>
   		</table>
