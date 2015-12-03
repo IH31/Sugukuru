@@ -28,10 +28,11 @@
 				</div>
 				<div class="detail-cart">
 					<div class="cart-form">
-						<form action="" method="post">
+						<form action="${pageContext.request.contextPath}/ec/detail" method="get">
 							<fieldset>
 								<div class="cart-label-group">
-									<label>数量 :</label><input type="text" name="num" value="1">
+									<label>数量 :</label><input type="text" name="cartAddNum" value="1">
+									<input type="hidden" name="cartAddId" value="<%= product.getProduct_id() %>">
 								</div>
 								<button type="submit">カートに入れる</button>
 							</fieldset>

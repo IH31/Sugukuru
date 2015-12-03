@@ -9,6 +9,9 @@
         <link rel="shortcut icon" href="${pageContext.request.contextPath}/assets/images/sugukuru2.png" type="image/x-icon">
         <meta name="description" content="Интерактивное руководство по началу работы в Brackets.">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/index.css">
+        <link href="${pageContext.request.contextPath}/assets/js/validetta/validetta.css" rel="stylesheet" type="text/css" media="screen" >
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/validetta/validetta.js"></script>
     </head>
 <body>
 <header class="topMain">
@@ -30,10 +33,8 @@
   <button type="submit"><img src="${pageContext.request.contextPath}/assets/images/search-kensaku3.png"/></button>
   </form>
   <div class="LogInCart2">
-    <a href="#"><img src="${pageContext.request.contextPath}/assets/images/ic_perm_identity_black_24dp.png" class="login"/>
+    <a href="${pageContext.request.contextPath}/ec/login"><img src="${pageContext.request.contextPath}/assets/images/ic_perm_identity_black_24dp.png" class="login"/>
     ログイン</a>
-    <a href="#"><img src="${pageContext.request.contextPath}/assets/images/ic_add_shopping_cart_black_24dp.png" class="cart"/>
-    カート</a>
     <a href="${pageContext.request.contextPath}/ec/cart"><img src="${pageContext.request.contextPath}/assets/images/ic_add_shopping_cart_black_24dp.png" class="cart"/>
     カート</a>
     <a href="${pageContext.request.contextPath}/ec/account"><img src="${pageContext.request.contextPath}/assets/images/ic_perm_identity_black_24dp.png" class="login"/>

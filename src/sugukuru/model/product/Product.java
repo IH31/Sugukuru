@@ -1,13 +1,12 @@
 package sugukuru.model.product;
 
-import sugukuru.dao.Model;
 
 /**
  *
  * @author saito.tatsuro
  *
  */
-public class Product extends Model {
+public class Product {
 	private String product_id;
 	private String product_name;
 	private String kana;
@@ -101,31 +100,4 @@ public class Product extends Model {
 	public void setCategory_id(String category_id) {
 		this.category_id = category_id;
 	}
-
-	@Override
-	protected String getPrimaryKeyVal() {
-		// TODO Auto-generated method stub
-		return getProduct_id();
-	}
-
-	@Override
-	protected String getPrimaryKey() {
-		// TODO Auto-generated method stub
-		return "PRODUCT_ID";
-	}
-
-	@Override
-	protected Class<?> getClazz() {
-		// TODO Auto-generated method stub
-		return getClass();
-	}
-
-	@Override
-	protected String getTableName() {
-		// TODO Auto-generated method stub
-		return "T_PRODUCT";
-	}
-
-
-
 }

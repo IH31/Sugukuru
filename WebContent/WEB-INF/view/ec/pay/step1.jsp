@@ -1,14 +1,37 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" import="java.util.*,sugukuru.model.product.*,sugukuru.cart.*"%>
 <jsp:include page="../template2/template.jsp">
-	<jsp:param value="すぐくる｜カート" name="siteTitle" />
+	<jsp:param value="すぐくる｜確認画面" name="siteTitle" />
 	<jsp:param name="pageContents">
 	<jsp:attribute name="value">
 		<div class="cart-content">
 		  <div class="cart-title">
-		    <p>あなたのカート</p>
+		    <p>確認画面</p>
 		  </div>
 		  <div class="cart-item-list">
+		  <div class="pay-flow-list">
+		  	<div class="flow-step flow-active">
+		  		<p>注文内容確定</p>
+		  	</div>
+		  	<div class="flow-allow">
+		  		<span>→</span>
+		  	</div>
+		  	<div class="flow-step">
+		  		<p>お届け先入力</p>
+		  	</div>
+		  	<div class="flow-allow">
+		  		<span>→</span>
+		  	</div>
+		  	<div class="flow-step">
+		  		<p>支払い方法選択</p>
+		  	</div>
+		  	<div class="flow-allow">
+		  		<span>→</span>
+		  	</div>
+		  	<div class="flow-step">
+		  		<p>注文完了</p>
+		  	</div>
+		  </div>
 		  <%
 		  	ArrayList<CartItem> cartItems = (ArrayList<CartItem>)request.getAttribute("cart");
 		  	if(cartItems != null && cartItems.size() > 0) {
@@ -35,7 +58,7 @@
 		          <div class="item-price-num-group">
 		            <label for="">個数：</label><br>
 		            <hr>
-		            <input type="text" name="num" value="<%= cartItem.getNum() %>">個
+		            <label><%= cartItem.getNum() %>個</label>
 		          </div>
 		          <div class="item-price-num-group">
 		            <label for="">価格：</label>
@@ -48,9 +71,6 @@
 		            小計価格：<span class="price-red">¥<%= cartItem.getProduct().getPrice() * cartItem.getNum() %></span>
 		          </p>
 		        </div>
-		        <div class="item-del-btn">
-		        	<button><a href="${pageContext.request.contextPath}/ec/cart?cartDelId=<%= cartItem.getProduct().getProduct_id() %>">カートから削除する</a></button>
-		        </div>
 		      </div>
 		    </div>
 		  <%
@@ -58,7 +78,7 @@
 		  %>
 		  <div class="cart-cash">
 		  	<p>合計（<%= sumCnt %>点）:<span class="price-red">¥<%= sumPrice %></span></p>
-		  	<button><a href="${pageContext.request.contextPath}/ec/pay/step1">確認画面へ</a></button>
+		  	<button><a href="${pageContext.request.contextPath}/ec/pay/step2">注文を確定する</a></button>
 		  </div>
 		  <%
 		  } else {

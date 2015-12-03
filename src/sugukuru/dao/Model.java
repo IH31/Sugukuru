@@ -1,5 +1,6 @@
 package sugukuru.dao;
 
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 
 public abstract class Model {
@@ -34,4 +35,15 @@ public abstract class Model {
 		sql += "WHERE " + getPrimaryKey() + "=" + getPrimaryKeyVal();
 		return this.getDaoAPI().update(getClazz(), sql, values);
 	}
+	/*
+	public int insert() {
+		Method[] methods = getClazz().getMethods();
+		String sql = "INSERT INTO " + getTableName() + " VALUES(";
+		for(int idx = 0; idx < methods.length / 2; idx++) {
+			sql += "?,";
+		}
+		sql.substring(0,sql.lastIndexOf(","));
+		sql += ")";
+		
+	}*/
 }

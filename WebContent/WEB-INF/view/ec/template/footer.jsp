@@ -25,10 +25,9 @@
 						<p>アカウントサービス</p>
 					</div>
 					<ul class="footer-list">
-					  	<li><a href="${pageContext.request.contextPath}/ec">アカウントページ</a></li>
-					    <li><a href="${pageContext.request.contextPath}/ec">カート</a></li>
-					    <li><a href="${pageContext.request.contextPath}/ec">ログイン</a></li>
-					    <li><a href="${pageContext.request.contextPath}/ec">登録</a></li>
+					  	<li><a href="${pageContext.request.contextPath}/ec/account">アカウントページ</a></li>
+					    <li><a href="${pageContext.request.contextPath}/ec/cart">カート</a></li>
+					    <li><a href="${pageContext.request.contextPath}/ec/login">ログイン</a></li>
 				    </ul>
 				</div>
 				<div class="footer-company">

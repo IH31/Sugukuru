@@ -78,15 +78,31 @@ public class Dao implements DaoAPI {
 	@Override
 	public <T> int update(Class<T> clazz, String sql, ArrayList<String> bind) {
 		int ret = 0;
+		Constructor<T> constructor;
+		Method[] methods = clazz.getMethods();
+		Object obj;
+		
 		try {
+			constructor = clazz.getConstructor(new Class[]{});
 			prepare = conn.prepareStatement(sql);
+			obj = constructor.newInstance(new Object[] {});
+			for(Method method : methods) {
+				if(method.getName().startsWith("get")) {
+					Class<?>[] arg = method.getParameterTypes();
+					if(arg[0].getName() == "java.lang.String") {
+						method.invoke(obj);
+					} else if(arg[0].getName() == "int") {
+						method.invoke(obj);
+					}
+				}
+			}
 			if(bind != null && bind.size() > 0) {
 				for(int idx = 0; idx < bind.size(); idx++) {
 					prepare.setString(idx + 1, bind.get(idx));
 				}
 			}
 			ret = prepare.executeUpdate();
-		} catch(SQLException e) {
+		} catch(Exception e) {
 			e.printStackTrace();
 			ret = -1;
 		} finally {
