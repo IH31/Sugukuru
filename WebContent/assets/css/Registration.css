@@ -1,8 +1,29 @@
  body{
-     /*background-color:#F7F7F7;*/
+     margin: 0;
  }
+ 
+.login-err, .login-success {
+	width: 30%;
+	margin: 0 auto;
+}
+
+.login-success p {
+	font-size: .8em;
+	padding: 1em;
+	border-radius: 4px;
+	background-color: #43A047;
+	color: #fefefe;
+}
+
+.login-err p {
+	font-size: .8em;
+	padding: 1em;
+	border-radius: 4px;
+	background-color: #F44336;
+	color: #fefefe;
+}
+ 
 .RegisterTop{
-  /*  height: 35px;*/
     background-color:#F7F7F7;
     width:100%;
     color:red;
@@ -11,19 +32,17 @@
 .RegisterTop img{
     width:100px;
     margin-left: auto;
-    margin-right: auto;
-    
-    
+    margin-right: auto;   
 }
 
 input, textarea, select, button {
   width : 150px;
   margin: 0;
-
   -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
      -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
           box-sizing: border-box;
 }
+
 input{
     height: 40px;   
     width:400px;
@@ -52,14 +71,11 @@ input[type=submit]{
 p.pp{
     font-size: 20px;
     color:#222;
-    /*font-weight:lighter;*/
 }
 .policy{
     font-size: 12px;
     width:400px;
     color:#777;
     font-weight: 200;
-    margin-top:-10px;
-    
-    
+    margin-top:-10px;    
 }

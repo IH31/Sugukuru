@@ -1,31 +1,25 @@
-package sugukuru.controller.ec;
+package sugukuru.controller.ec.account;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.commons.lang3.StringUtils;
-
-import sugukuru.model.product.Product;
-import sugukuru.model.product.ProductDao;
+import sugukuru.auth.Auth;
 
 /**
- * Servlet implementation class Ec
+ * Servlet implementation class Ec_Account
  */
-@WebServlet({"/ec", "/ec/products"})
-public class Ec extends HttpServlet {
+@WebServlet("/ec/account")
+public class Ec_Account extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Ec() {
+    public Ec_Account() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -35,17 +29,14 @@ public class Ec extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-
-		String requestPage = "/WEB-INF/view/ec/product/index.jsp";
-		String id = request.getParameter("id");
+		String requestPage = "";
 		
-		ProductDao productDao = new ProductDao();
-		if(StringUtils.contains(id, "ca")) {
-			request.setAttribute("products", productDao.selectCategoryId(id));		
+		if(!Auth.check(request)) {
+			requestPage = "/WEB-INF/view/ec/account/index.jsp";
 		} else {
-			request.setAttribute("products", productDao.selectAll());
+			requestPage = "/WEB-INF/view/ec/login/index.jsp";
 		}
-		productDao.closeAll();
+
 		request.getRequestDispatcher(requestPage).forward(request, response);
 	}
 
